@@ -25,6 +25,10 @@ body {
     /* grid-layout adapted from: https://stackoverflow.com/questions/44052336/make-a-grid-item-span-to-the-last-row-column */
     grid-template-columns: 10rem 1fr;
     grid-template-rows: auto [last-line];
+
+    /* for some reason breaks the float-left layout:
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; */
   }
 
   section > * {
@@ -39,30 +43,7 @@ body {
     grid-row: 1 / last-line;
     grid-row-start: span 9000;
   }
-}
-@media (min-width: 3800rem) {
-  /* big screens */
-  section {
-    background-color: #ffcccc;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    /* grid-template-rows: 1fr; */
-    grid-template-rows: 1fr auto [last-line];
-    justify-items: stretch;
-    /* grid-auto-flow: column; */
-  }
-  section > h2 {
-    /* grid-row: 1 / auto; */
-    grid-column: 1 / span 1;
-    grid-row: 1 / last-line;
-    grid-row-start: span 9000;
-    /* grid-row-start: 1; */
-    /* grid-row-end: -1; */
-    /* grid-row-end: last-line; */
-  }
   /* 
-   * or use n-th-child selectors
+   * or use n-th-child selectors?
    */
 }
