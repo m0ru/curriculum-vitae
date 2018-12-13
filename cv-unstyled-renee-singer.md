@@ -1,3 +1,7 @@
+---
+title: "CV Renée Singer"
+---
+
 # Renée Singer
 
 - Address: Leopold-Ernst-Gasse 32/7, 1170 Vienna
