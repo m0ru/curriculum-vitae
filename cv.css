@@ -23,7 +23,7 @@ body {
   section {
     display: grid;
     /* grid-layout adapted from: https://stackoverflow.com/questions/44052336/make-a-grid-item-span-to-the-last-row-column */
-    grid-template-columns: repeat(1, minmax(10rem, 1fr)) [last-col] 35%;
+    grid-template-columns: 10rem 1fr;
     grid-template-rows: auto [last-line];
   }
 
@@ -35,7 +35,6 @@ body {
 
   section > h2 {
     background-color: rgb(236, 236, 169);
-    /* grid-column: last-col / span 1; */
     grid-column: 1 / span 1;
     grid-row: 1 / last-line;
     grid-row-start: span 9000;
